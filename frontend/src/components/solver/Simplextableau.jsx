@@ -1,4 +1,4 @@
-import { T } from "../../constants/theme";
+import { T } from "../../constant/theme";
 import { fmt } from "../../utils/format";
 
 export default function SimplexTableau({ iter }) {

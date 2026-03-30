@@ -1,4 +1,4 @@
-import { T } from "../../constants/theme";
+import { T } from "../../constant/theme";
 
 export const Card = ({ children, style = {}, className = "" }) => (
   <div

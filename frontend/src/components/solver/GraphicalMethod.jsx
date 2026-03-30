@@ -1,4 +1,4 @@
-import { CHART_COLORS, T } from "../../constants/theme";
+import { CHART_COLORS, T } from "../../constant/theme";
 import { fmt } from "../../utils/format";
 
 export default function GraphicalMethod({ problem }) {

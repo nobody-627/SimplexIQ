@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { T } from "../constants/theme";
+import { T } from "../constant/theme";
 import { Badge, Card, Pill, SectionTitle } from "../components/common/UIPrimitives";
 import SimplexTableau from "../components/solver/SimplexTableau";
 

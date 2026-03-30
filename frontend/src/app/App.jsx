@@ -1,14 +1,14 @@
 import { useCallback, useState } from "react";
-import { T, statusMeta } from "../constants/theme";
-import { TEMPLATES } from "../data/templates";
+import { T, statusMeta } from "../constant/theme";
+import { TEMPLATES } from "../data/templets";
 import { solveSimplex } from "../solver/simplex_client";
 import { fmt } from "../utils/format";
 import { setupGlobalStyles } from "../styles/setupGlobalStyles";
-import InputSection from "../sections/InputSection";
-import ResultsSection from "../sections/ResultsSection";
-import IterationsSection from "../sections/IterationsSection";
-import VisualizationsSection from "../sections/VisualizationsSection";
-import TemplatesSection from "../sections/TemplatesSection";
+import InputSection from "../section/InputSection";
+import ResultsSection from "../section/ResultsSection";
+import IterationSection from "../section/IterationSection";
+import VisualizationSection from "../section/VisualizationSection";
+import TempletesSection from "../section/TempletesSection";
 
 setupGlobalStyles();
 
@@ -249,9 +249,9 @@ export default function App() {
                     <div style={{ maxWidth: 1080, margin: "0 auto", width: "100%" }}>
                         {section === "input" && <InputSection problem={problem} setProblem={setProblem} onSolve={handleSolve} solving={solving} />}
                         {section === "results" && result && <ResultsSection result={result} problem={problem} />}
-                        {section === "iterations" && result && <IterationsSection result={result} />}
-                        {section === "visualizations" && result && <VisualizationsSection result={result} problem={problem} />}
-                        {section === "templates" && <TemplatesSection onLoad={loadTemplate} />}
+                        {section === "iterations" && result && <IterationSection result={result} />}
+                        {section === "visualizations" && result && <VisualizationSection result={result} problem={problem} />}
+                        {section === "templates" && <TempletesSection onLoad={loadTemplate} />}
                     </div>
                 </main>
             </div>

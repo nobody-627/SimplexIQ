@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { statusMeta, T } from "../constants/theme";
+import { statusMeta, T } from "../constant/theme";
 import { fmt } from "../utils/format";
 import { Badge, Card, SectionTitle } from "../components/common/UIPrimitives";
 

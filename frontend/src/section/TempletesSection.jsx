@@ -1,5 +1,5 @@
-import { CHART_COLORS, T } from "../constants/theme";
-import { TEMPLATES } from "../data/templates";
+import { CHART_COLORS, T } from "../constant/theme";
+import { TEMPLATES } from "../data/templets";
 import { Badge, Card, SectionTitle } from "../components/common/UIPrimitives";
 
 export default function TemplatesSection({ onLoad }) {

@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { T } from "../constants/theme";
+import { T } from "../constant/theme";
 import { Card, NumInput, Pill, SectionTitle, Select } from "../components/common/UIPrimitives";
 
 export default function InputSection({ problem, setProblem, onSolve, solving }) {

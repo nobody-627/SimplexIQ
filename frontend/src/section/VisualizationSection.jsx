@@ -11,7 +11,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { CHART_COLORS, T } from "../constants/theme";
+import { CHART_COLORS, T } from "../constant/theme";
 import { fmt } from "../utils/format";
 import { Card, SectionTitle } from "../components/common/UIPrimitives";
 import GraphicalMethod from "../components/solver/GraphicalMethod";
