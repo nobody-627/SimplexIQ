@@ -68,6 +68,20 @@ export default function SimplexTableau({ iter }) {
             >
               RHS
             </th>
+            <th
+              style={{
+                padding: "6px 14px",
+                textAlign: "center",
+                border: `1px solid ${T.border}`,
+                background: "#fff7e8",
+                color: T.indigoLight,
+                fontFamily: "JetBrains Mono, monospace",
+                fontWeight: 700,
+                minWidth: 70,
+              }}
+            >
+              RHS / key
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -117,6 +131,18 @@ export default function SimplexTableau({ iter }) {
               >
                 {fmt(row[TV])}
               </td>
+              <td
+                style={{
+                  padding: "5px 14px",
+                  textAlign: "center",
+                  border: `1px solid ${T.border}`,
+                  fontFamily: "JetBrains Mono, monospace",
+                  fontWeight: 600,
+                  color: i === lRow ? T.emerald : T.textMuted,
+                }}
+              >
+                {row[eCol] > 1e-9 ? fmt(row[TV] / row[eCol]) : "–"}
+              </td>
             </tr>
           ))}
           <tr style={{ background: "#f3f5ff", borderTop: `2px solid ${T.indigo}44` }}>
@@ -158,6 +184,18 @@ export default function SimplexTableau({ iter }) {
               }}
             >
               {fmt(tab[m][TV])}
+            </td>
+            <td
+              style={{
+                padding: "6px 14px",
+                textAlign: "center",
+                border: `1px solid ${T.border}`,
+                fontFamily: "JetBrains Mono, monospace",
+                fontWeight: 700,
+                color: T.indigoLight,
+              }}
+            >
+              –
             </td>
           </tr>
         </tbody>
